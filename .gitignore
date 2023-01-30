@@ -1,0 +1,5 @@
+app/.idea/
+.idea
+app/node_modules
+app/.cache
+app/.npm
