@@ -8,3 +8,11 @@ services:
       - "./app:/app"
     ports:
       - 0.0.0.0:8080:8080
+
+  caddy:
+    image: caddy
+    volumes:
+      - "./services/caddy/Caddyfile:/etc/caddy/Caddyfile"
+    ports:
+      - "443:443"
+      - "80:80"
